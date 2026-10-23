@@ -233,16 +233,16 @@ export const TRANSFORMATIONS: TransformationStory[] = [
   {
     id: 'transformation-2',
     image: '/assets/aistudio/aca2931b-165d-4478-9c68-c9e5bab6f185_cdd1e26e.jpg',
-    title: 'Clean Bulking & Muscular Hypertrophy',
-    category: 'Muscle Building & Bulking',
-    beforeStat: '70.60 KG',
-    afterStat: '77.90 KG',
-    delta: '+7.30 KG Muscle Mass',
-    deltaType: 'gain',
-    quote: 'Coach Sachu dialed in my training volume, progressive tension, and surplus nutrition. Gained over 7 kg of quality muscle and doubled my strength.',
+    title: 'Fat Loss & Athletic Conditioning',
+    category: 'Fat Loss & Conditioning',
+    beforeStat: '77.90 KG',
+    afterStat: '70.60 KG',
+    delta: '-7.30 KG Body Fat',
+    deltaType: 'loss',
+    quote: 'Coach Sachu dialed in my workout splits, high-intensity functional training, and deficit nutrition. I dropped 7.3 kg of fat, trimmed my waistline, and leveled up my fitness.',
     duration: '16 Weeks',
     coach: 'Coach Sachu',
-    keyHighlights: ['+7.3 KG Lean Muscle', 'Chest & Delts Broadening', 'Heavy Compound Strength Doubled', 'Structured Calorie Surplus']
+    keyHighlights: ['-7.3 KG Pure Fat Loss', 'Dramatic Waistline & Face Slimming', 'Functional Agility & Stamina', 'Personalized Calorie Deficit']
   },
   {
     id: 'transformation-3',
