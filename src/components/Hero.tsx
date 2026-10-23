@@ -104,7 +104,7 @@ export const Hero: React.FC<HeroProps> = ({ onJoinClick, onViewPlansClick, onCon
 
           {/* Quick Timing Summary Notice */}
           <div className="pt-2 text-xs text-neutral-400 flex flex-wrap items-center gap-x-4 gap-y-1">
-            <span>Operating Hours: Mon - Sat 5:00AM - 10:00AM & 4:30PM - 10:00PM</span>
+            <span>Operating Hours: Mon - Sat 5:30AM - 10:00AM &amp; 4:30PM - 10:00PM</span>
             <span className="hidden sm:inline">·</span>
             <span className="text-neutral-500">Sunday Closed</span>
           </div>

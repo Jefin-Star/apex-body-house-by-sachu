@@ -151,7 +151,7 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="space-y-1.5 text-neutral-400">
               <p className="text-white font-medium">Monday to Saturday:</p>
-              <p className="font-mono text-[11px]">5:00 AM – 10:00 AM</p>
+              <p className="font-mono text-[11px]">5:30 AM – 10:00 AM</p>
               <p className="font-mono text-[11px]">4:30 PM – 10:00 PM</p>
               <div className="pt-2 border-t border-neutral-800">
                 <p className="text-red-400 font-semibold uppercase">Sunday: Closed</p>

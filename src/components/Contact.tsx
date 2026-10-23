@@ -149,7 +149,7 @@ export const Contact: React.FC = () => {
                   <div className="bg-neutral-950/60 p-4 rounded-xl border border-neutral-800/80 space-y-1.5 text-neutral-300">
                     <div className="flex justify-between">
                       <span className="text-neutral-400">Monday – Saturday:</span>
-                      <span className="font-semibold text-white font-mono text-[11px]">5:00AM – 10:00AM</span>
+                      <span className="font-semibold text-white font-mono text-[11px]">5:30AM – 10:00AM</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-neutral-400">Evening Shift:</span>

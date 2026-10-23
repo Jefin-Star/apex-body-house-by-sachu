@@ -24,8 +24,8 @@ export const GYM_INFO = {
   strengthFacilityImagePath: "/src/assets/images/facility_heavy_strength_1792689707050.jpg",
   functionalTurfImagePath: "/src/assets/images/facility_functional_turf_1792689707478.jpg",
   timings: {
-    weekdays: "5:00 AM – 10:00 AM & 4:30 PM – 10:00 PM",
-    morningSlot: "5:00 AM – 10:00 AM",
+    weekdays: "5:30 AM – 10:00 AM & 4:30 PM – 10:00 PM",
+    morningSlot: "5:30 AM – 10:00 AM",
     eveningSlot: "4:30 PM – 10:00 PM",
     days: "Monday to Saturday",
     sunday: "Closed",
