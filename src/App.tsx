@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { CoachProfileCard } from './components/CoachProfileCard';
+import { Transformations } from './components/Transformations';
 import { Programs } from './components/Programs';
 import { Membership } from './components/Membership';
 import { RegistrationForm } from './components/RegistrationForm';
@@ -95,6 +96,12 @@ export default function App() {
           <CoachProfileCard onBookPT={() => handleSelectPlan('personal-training')} />
         </div>
       </section>
+
+      {/* Dynamic Client Transformations Section (5-second auto-rotation & swipe) */}
+      <Transformations 
+        onStartTransformation={() => handleSelectPlan('3-months')}
+        onOpenConsultation={() => setConsultationModalOpen(true)}
+      />
 
       {/* Our Programs */}
       <Programs onSelectProgram={handleSelectProgram} />

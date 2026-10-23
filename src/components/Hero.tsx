@@ -1,6 +1,7 @@
 import React from 'react';
 import { GYM_INFO, HIGHLIGHTS } from '../data/gymData';
 import { ArrowRight, ShieldCheck, Dumbbell, Award, Flame, Users } from 'lucide-react';
+import heroGymImage from '../assets/images/hero_gym_dark_lighting_1792689706717.jpg';
 
 interface HeroProps {
   onJoinClick: () => void;
@@ -9,6 +10,8 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onJoinClick, onViewPlansClick, onConsultationClick }) => {
+  const heroImageSrc = heroGymImage || GYM_INFO.heroImage || '/src/assets/images/hero_gym_dark_lighting_1792689706717.jpg';
+
   const getHighlightIcon = (title: string) => {
     switch (title) {
       case 'EXPERT COACHING':
@@ -29,7 +32,7 @@ export const Hero: React.FC<HeroProps> = ({ onJoinClick, onViewPlansClick, onCon
       {/* Background with Dark Scrim and Cinematic Lighting */}
       <div className="absolute inset-0 z-0">
         <img
-          src={GYM_INFO.heroImage}
+          src={heroImageSrc}
           alt="APEX BODY HOUSE Gym Facility"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000"
         />

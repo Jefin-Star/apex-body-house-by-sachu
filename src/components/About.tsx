@@ -1,6 +1,8 @@
 import React from 'react';
 import { GYM_INFO, WHY_CHOOSE_ITEMS } from '../data/gymData';
 import { Check, ShieldCheck, Sparkles, ArrowRight, Dumbbell } from 'lucide-react';
+import strengthFacilityImg from '../assets/images/facility_heavy_strength_1792689707050.jpg';
+import functionalTurfImg from '../assets/images/facility_functional_turf_1792689707478.jpg';
 
 interface AboutProps {
   onOpenConsultation: () => void;
@@ -8,6 +10,8 @@ interface AboutProps {
 }
 
 export const About: React.FC<AboutProps> = ({ onOpenConsultation, onExplorePrograms }) => {
+  const strengthImageSrc = strengthFacilityImg || GYM_INFO.strengthFacilityImage || '/src/assets/images/facility_heavy_strength_1792689707050.jpg';
+  const functionalTurfImageSrc = functionalTurfImg || GYM_INFO.functionalTurfImage || '/src/assets/images/facility_functional_turf_1792689707478.jpg';
   return (
     <section id="about" className="py-24 bg-neutral-950 border-t border-neutral-900 relative">
       {/* Background ambient lighting */}
@@ -77,7 +81,7 @@ export const About: React.FC<AboutProps> = ({ onOpenConsultation, onExploreProgr
           <div className="lg:col-span-6 grid grid-cols-2 gap-4">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-neutral-900 border border-neutral-800 shadow-xl group">
               <img
-                src={GYM_INFO.strengthFacilityImage}
+                src={strengthImageSrc}
                 alt="Heavy dumbbell rack at Apex Body House"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
@@ -91,7 +95,7 @@ export const About: React.FC<AboutProps> = ({ onOpenConsultation, onExploreProgr
 
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-neutral-900 border border-neutral-800 shadow-xl group translate-y-4">
               <img
-                src={GYM_INFO.functionalTurfImage}
+                src={functionalTurfImageSrc}
                 alt="Functional turf area at Apex Body House"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"

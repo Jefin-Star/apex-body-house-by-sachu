@@ -36,3 +36,18 @@ export interface ConsultationFormData {
   preferredTime: string;
   primaryGoal: string;
 }
+
+export interface TransformationStory {
+  id: string;
+  image: string;
+  title: string;
+  category: string;
+  beforeStat: string;
+  afterStat: string;
+  delta: string;
+  deltaType: 'loss' | 'gain' | 'award';
+  quote: string;
+  duration: string;
+  coach: string;
+  keyHighlights: string[];
+}

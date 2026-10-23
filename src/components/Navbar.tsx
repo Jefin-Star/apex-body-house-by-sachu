@@ -71,6 +71,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onSelectPlan, onOpenConsultation
               Coach Sachu
             </button>
             <button
+              onClick={() => scrollTo('transformations')}
+              className="hover:text-white transition-colors whitespace-nowrap shrink-0 hover:underline underline-offset-8 decoration-red-600 cursor-pointer"
+            >
+              Transformations
+            </button>
+            <button
               onClick={() => scrollTo('contact')}
               className="hover:text-white transition-colors whitespace-nowrap shrink-0 hover:underline underline-offset-8 decoration-red-600 cursor-pointer"
             >
@@ -143,6 +149,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onSelectPlan, onOpenConsultation
               className="text-left text-neutral-200 hover:text-red-500 py-1"
             >
               Meet Coach Sachu
+            </button>
+            <button
+              onClick={() => scrollTo('transformations')}
+              className="text-left text-neutral-200 hover:text-red-500 py-1"
+            >
+              Client Transformations
             </button>
             <button
               onClick={() => scrollTo('contact')}

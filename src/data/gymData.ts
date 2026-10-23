@@ -1,4 +1,7 @@
-import { MembershipPlan, FitnessProgram } from '../types';
+import { MembershipPlan, FitnessProgram, TransformationStory } from '../types';
+import heroImageSrc from '../assets/images/hero_gym_dark_lighting_1792689706717.jpg';
+import strengthFacilityImageSrc from '../assets/images/facility_heavy_strength_1792689707050.jpg';
+import functionalTurfImageSrc from '../assets/images/facility_functional_turf_1792689707478.jpg';
 
 export const GYM_INFO = {
   name: "APEX BODY HOUSE BY SACHU",
@@ -14,9 +17,12 @@ export const GYM_INFO = {
   googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.911246614751!2d76.7918772!3d9.0063175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b060b34a3d9ed23%3A0x3495067466c97a5a!2sABHSAC%20%5BAPEX%20BODY%20HOUSE%20BY%20SACHU%5D%20FITNESS%20STUDIO!5e1!3m2!1sen!2sin!4v1792687284670!5m2!1sen!2sin",
   logoPath: "/assets/aistudio/ABHSAC_RED_15a21618.png",
   coachPhotoPath: "/assets/aistudio/IMG_8623.JPG_f9da8400.jpeg",
-  heroImage: "/src/assets/images/hero_gym_dark_lighting_1792689706717.jpg",
-  strengthFacilityImage: "/src/assets/images/facility_heavy_strength_1792689707050.jpg",
-  functionalTurfImage: "/src/assets/images/facility_functional_turf_1792689707478.jpg",
+  heroImage: heroImageSrc,
+  strengthFacilityImage: strengthFacilityImageSrc,
+  functionalTurfImage: functionalTurfImageSrc,
+  heroImagePath: "/src/assets/images/hero_gym_dark_lighting_1792689706717.jpg",
+  strengthFacilityImagePath: "/src/assets/images/facility_heavy_strength_1792689707050.jpg",
+  functionalTurfImagePath: "/src/assets/images/facility_functional_turf_1792689707478.jpg",
   timings: {
     weekdays: "5:00 AM – 10:00 AM & 4:30 PM – 10:00 PM",
     morningSlot: "5:00 AM – 10:00 AM",
@@ -208,3 +214,48 @@ export const PERSONAL_TRAINING_DETAILS = {
     ]
   }
 };
+
+export const TRANSFORMATIONS: TransformationStory[] = [
+  {
+    id: 'transformation-1',
+    image: '/assets/aistudio/1a4a39d6-67b5-4add-8362-ce18a010f177_34398084.jpg',
+    title: 'Fat Loss & Athletic Recomposition',
+    category: 'Fat Loss & Conditioning',
+    beforeStat: '91.0 KG',
+    afterStat: '86.0 KG',
+    delta: '-5.0 KG Body Fat',
+    deltaType: 'loss',
+    quote: 'The personalized deficit plan and progressive compound workouts helped me shed stubborn belly fat while gaining stamina and core stability.',
+    duration: '12 Weeks',
+    coach: 'Coach Sachu',
+    keyHighlights: ['-5 KG Pure Fat Loss', 'Visibly Leaner Waist', 'Enhanced Cardiovascular Stamina', 'Blood Markers Optimized']
+  },
+  {
+    id: 'transformation-2',
+    image: '/assets/aistudio/aca2931b-165d-4478-9c68-c9e5bab6f185_cdd1e26e.jpg',
+    title: 'Clean Bulking & Muscular Hypertrophy',
+    category: 'Muscle Building & Bulking',
+    beforeStat: '70.60 KG',
+    afterStat: '77.90 KG',
+    delta: '+7.30 KG Muscle Mass',
+    deltaType: 'gain',
+    quote: 'Coach Sachu dialed in my training volume, progressive tension, and surplus nutrition. Gained over 7 kg of quality muscle and doubled my strength.',
+    duration: '16 Weeks',
+    coach: 'Coach Sachu',
+    keyHighlights: ['+7.3 KG Lean Muscle', 'Chest & Delts Broadening', 'Heavy Compound Strength Doubled', 'Structured Calorie Surplus']
+  },
+  {
+    id: 'transformation-3',
+    image: '/assets/aistudio/a6e73e59-0e24-47a3-901c-149d1adb0e9d_f3d50b1b.jpg',
+    title: 'Total Body Toning & Achievement Award',
+    category: "Women's Fitness & Lifestyle Recomp",
+    beforeStat: 'Inconsistent Routine',
+    afterStat: 'Apex Award Winner',
+    delta: 'Studio Transformation Award',
+    deltaType: 'award',
+    quote: 'The friendly, disciplined environment at ABHSAC motivated me every single day. I transformed my posture, built confidence, and was honored with the Transformation Award!',
+    duration: '20 Weeks',
+    coach: 'Coach Sachu',
+    keyHighlights: ['Apex Transformation Trophy Winner', 'Postural Alignment & Core Strength', 'Sustainable Healthy Habits', 'Empowering Fitness Routine']
+  }
+];
